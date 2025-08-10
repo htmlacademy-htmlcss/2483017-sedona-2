@@ -2,7 +2,7 @@
 
 * Студент: [Анастасия Алексеева](https://up.htmlacademy.ru/htmlcss-individual/2/user/2483017).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
-* Сайт: [Мой проект "Седона"](https://liatrissa.github.io/2483017-sedona-2/)
+* Сайт: [Мой проект "Седона"](https://liatrissa.github.io/2483017-sedona-2/).
 
 ---
 
