@@ -7,38 +7,29 @@
 </head>
 
 <body>
-  <header class="page-header" data-test="header">
-    <!-- Логотип сайта -->
-    <a class="site-logo-link" href="#" aria-current="page">
+  <header class="header" data-test="header">
+    <a class="site-logo-link" href="index.html" aria-current="page">
       <img class="site-logo" alt="Логотип города Седона" src="#">
     </a>
-    <!-- Навигация -->
     <nav class="navigation">
-      <!-- Основное меню сайта -->
       <ul class="navigation-list">
-        <!-- Главная -->
         <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="#" aria-current="page">Главная</a>
+          <a class="navigation-link navigation-link-current" href="index.html" aria-current="page">Главная</a>
         </li>
-        <!-- О Седоне -->
         <li class="navigation-item">
           <a class="navigation-link" href="#">О Седоне</a>
         </li>
-        <!-- Гостиницы -->
         <li class="navigation-item">
           <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
 
-      <!-- Пользовательская навигация -->
       <ul class="navigation-user">
-        <!-- Поиск -->
         <li class="navigation-user-item">
           <a class="navigation-link" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
-        <!-- Избранные отели -->
         <li class="navigation-user-item">
           <a class="navigation-link" href="#">
             <span class="visually-hidden">Отелей в избранном:</span>
@@ -46,23 +37,19 @@
           </a>
         </li>
       </ul>
-      <!-- Кнопка "Хочу сюда!" -->
       <a class="btn btn-cta" href="#">Хочу сюда!</a>
     </nav>
   </header>
 
   <main class="main" data-test="main">
-    <!-- Промо-блок (Hero) -->
     <section class="hero" data-test="hero">
       <h1 class="visually-hidden">Сайт города Седона</h1>
       <img class="hero-image" src="#" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
     </section>
 
-    <!-- Блок преимуществ города Седона -->
     <section class="advantages" data-test="advantages">
       <h2 class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-      <!-- Список преимуществ города -->
       <ul class="advantages-list">
         <li class="advantages-item">
           <h3 class="advantages-item-title">Настоящий городок</h3>
@@ -89,11 +76,9 @@
       </ul>
     </section>
 
-    <!-- Блок услуг и сервисов города Седона -->
     <section class="services">
       <h2 class="services-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
       <p class="services-description">Опытный персонал и качественное обслуживание!</p>
-      <!-- Список сервисов города -->
       <ul class="services-list">
         <li class="services-item">
           <h3 class="services-item-title">Жильё</h3>
@@ -110,28 +95,24 @@
       </ul>
     </section>
 
-    <!-- Блок поиска гостиниц в Седоне -->
-    <section class="hotel-search" data-test="search">
-      <h2 class="hotel-search-title">Заинтересовались?</h2>
-      <p class="hotel-search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <!-- Кнопка поиска гостиницы-->
-      <button class="btn btn-hotel-search" type="button">Поиск гостиницы в Седоне</button>
+    <section class="search" data-test="search">
+      <h2 class="search-title">Заинтересовались?</h2>
+      <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <button class="btn btn-search" type="button">Поиск гостиницы в Седоне</button>
     </section>
 
-    <!-- Блок подписки на рассылку -->
-    <section class="newsletter newsletter-index" data-test="subscribe">
-      <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-      <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
-        <input class="newsletter-input" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
-        <button class="btn btn-newsletter" type="submit">Подписаться</button>
+    <section class="subscribe subscribe-index" data-test="subscribe">
+      <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+      <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="visually-hidden" for="subscribe-email">Ваш e-mail</label>
+        <input class="subscribe-input" placeholder="email@example.com" type="email" name="subscribe-email" id="subscribe-email" required>
+        <button class="btn btn-subscribe" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
 
-  <footer class="page-footer" data-test="footer">
-    <!-- Раздел социальных сетей -->
+  <footer class="footer" data-test="footer">
     <ul class="social-list">
       <li class="social-item">
         <a class="social-link" href="https://vk.com/htmlacademy">
@@ -149,11 +130,10 @@
         </a>
       </li>
     </ul>
+    <div class="phone-wrapper">
+      <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+    </div>
 
-    <!-- Контактный телефон с возможностью вызова -->
-    <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-
-    <!-- Логотип Академии с ссылкой на лендинг курса -->
     <a class="logo-developer" href="https://htmlacademy.ru/intensive/htmlcss">.html academy</a>
   </footer>
 </body>
