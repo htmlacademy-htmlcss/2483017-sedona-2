@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Каталог гостиниц города Седоны</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -36,8 +37,10 @@
             <span class="count">12</span>
           </a>
         </li>
+        <li class="navigation-user-item">
+          <a class="btn btn-cta" href="#">Хочу сюда!</a>
+        </li>
       </ul>
-      <a class="btn btn-cta" href="#">Хочу сюда!</a>
     </nav>
   </header>
 
@@ -62,18 +65,18 @@
             <legend class="filter-group-title">Инфраструктура:</legend>
             <ul class="filter-group-list">
               <li class="filter-group-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="pool" checked> Бассейн
+                <label class="filter-label">
+                  <input class="filter-input" type="checkbox" name="pool" checked> Бассейн
                 </label>
               </li>
               <li class="filter-group-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="parking" checked> Парковка
+                <label class="filter-label">
+                  <input class="filter-input" type="checkbox" name="parking" checked> Парковка
                 </label>
               </li>
               <li class="filter-group-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="wi-fi"> Wi-Fi
+                <label class="filter-label">
+                  <input class="filter-input" type="checkbox" name="wi-fi"> Wi-Fi
                 </label>
               </li>
             </ul>
@@ -83,18 +86,18 @@
             <legend class="filter-group-title">Тип жилья:</legend>
             <ul class="filter-group-list">
               <li class="filter-group-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="hotel-group" value="hotel" checked> Гостиница
+                <label class="filter-label">
+                  <input class="filter-input" type="radio" name="hotel-group" value="hotel" checked> Гостиница
                 </label>
               </li>
               <li class="filter-group-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="hotel-group" value="motel"> Мотель
+                <label class="filter-label">
+                  <input class="filter-input" type="radio" name="hotel-group" value="motel"> Мотель
                 </label>
               </li>
               <li class="filter-group-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="hotel-group" value="apartments"> Апартаменты
+                <label class="filter-label">
+                  <input class="filter-input" type="radio" name="hotel-group" value="apartments"> Апартаменты
                 </label>
               </li>
             </ul>
@@ -102,10 +105,10 @@
 
           <fieldset class="filter-group-price">
             <legend class="filter-group-title">Стоимость, ₽:</legend>
-            <label class="filter-price-label" for="price-min">от</label>
             <input class="filter-price-input" placeholder="0" type="number" id="price-min" name="price-min" value="0" min="0">
-            <label class="filter-price-label" for="price-max">до</label>
+            <label class="filter-price-label" for="price-min">от</label>
             <input class="filter-price-input" placeholder="9000" type="number" id="price-max" name="price-max" value="9000" min="0">
+            <label class="filter-price-label" for="price-max">до</label>
           </fieldset>
 
           <button class="btn btn-filter-apply" type="submit">Применить</button>
@@ -207,8 +210,8 @@
       </ul>
 
       <ul class="pagination">
-        <li class="pagination-item">
-          <span class="pagination-link pagination-current">1</span>
+        <li class="pagination-item pagination-item-current">
+          <span class="pagination-link pagination-link-current">1</span>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">2</a>
@@ -232,8 +235,8 @@
       <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
       <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="visually-hidden" for="subscribe-email">Ваш e-mail</label>
-        <input class="subscribe-input" placeholder="email@example.com" type="email" name="subscribe-email" id="subscribe-email" required>
+        <label class="visually-hidden" for="subscribe-email">Введите ваш e-mail</label>
+        <input class="subscribe-input" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
         <button class="btn subscribe-btn" type="submit">Подписаться</button>
       </form>
     </section>
