@@ -45,6 +45,14 @@ body {
   list-style: none;
 }
 
+.favorites-count {
+  font-size: 10px;
+  line-height: 10px;
+  background-color: #7db54f;
+  color: #FFFFFF;
+  text-align: center;
+}
+
 .btn {
   font-family: inherit;
   font-size: 16px;
@@ -55,6 +63,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  border: none;
 }
 
 .main {
@@ -138,6 +147,15 @@ body {
   color:#FFFFFF;
 }
 
+.search {
+  text-align: center;
+}
+
+.btn-search {
+  font-size: 20px;
+  line-height: 36px;
+}
+
 .subscribe-input {
   font-family: inherit;
   font-size: 18px;
@@ -154,6 +172,8 @@ body {
 }
 
 .btn-subscribe {
+  font-size: 20px;
+  line-height: 36px;
   background-color: #82b3d3;
 }
 
@@ -203,6 +223,7 @@ body {
 .filter-group-title {
   font-size: 20px;
   line-height: 24px;
+  font-weight: 700;
   color: #FFFFFF;
 }
 
@@ -264,12 +285,15 @@ body {
   border: none;
 }
 
+.catalog-card-title-link {
+  text-decoration: none;
+}
+
 .catalog-card-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   color: #000000;
-  text-decoration: none;
 }
 
 .catalog-card-hotel {
@@ -323,3 +347,4 @@ body {
 .subscribe-btn {
   background-color: #82b3d3;
 }
+
