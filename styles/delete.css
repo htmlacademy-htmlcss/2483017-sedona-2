@@ -1,0 +1,21 @@
+/* Button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 50px;
+gap: 10px;
+
+width: 160px;
+height: 36px;
+
+/* Buttons/basic */
+background: #756157;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
