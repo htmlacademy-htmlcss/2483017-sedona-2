@@ -301,6 +301,7 @@ body {
   background-repeat: no-repeat;
   background-position: left top;
   color: #ffffff;
+  padding: 35px 70px 70px;
 }
 
 .catalog-page-title {
@@ -321,6 +322,11 @@ body {
 
 .filter {
   display: flex;
+}
+
+.filter-form {
+  display: flex;
+  align-items: flex-start;
 }
 
 .filter-group {
@@ -459,4 +465,3 @@ body {
 .phone-wrapper {
   font-style: inherit;
 }
-
