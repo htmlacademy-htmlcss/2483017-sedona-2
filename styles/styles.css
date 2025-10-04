@@ -46,6 +46,7 @@ body {
 
 .navigation {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 
@@ -112,17 +113,17 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  border: none;
+  /* border: none;
   padding: 8px 34px;
   border-radius: 4px;
-  box-sizing: border-box;
+  box-sizing: border-box; */
 }
 
-.btn-cta {
+/* .btn-cta {
   display: inline-block;
   margin: 14px 0;
   min-width: 160px;
-}
+} */
 
 .main {
   background-color: #ffffff;
@@ -156,6 +157,7 @@ body {
 
 .advantages-wrapper {
   padding: 69px 0;
+  margin-bottom: 21px;
 }
 
 .services-wrapper {
@@ -288,8 +290,14 @@ body {
   font-size: 20px;
   line-height: 36px;
   margin-bottom: 96px;
-  padding: 8px 50px;
-  min-width: 376px;
+  /* padding: 8px 50px;
+  min-width: 376px; */
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .subscribe-input {
@@ -299,6 +307,9 @@ body {
   font-weight: 400;
   background-color: #f2f2f2;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .subscribe-input::placeholder {
@@ -311,6 +322,9 @@ body {
   font-size: 20px;
   line-height: 36px;
   background-color: #82b3d3;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .footer {
