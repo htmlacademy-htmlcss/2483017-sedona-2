@@ -28,20 +28,20 @@
   --bg-hover: rgba(255, 255, 255, 0.6);
   --bg-active: rgba(255, 255, 255, 0.3); */
 
-  /* --btn-primary: #756157;
-  --btn-secondary: #82b3d3;
-  --btn-select: #7db54f;
+  --btn-primary: #756157;
+  /* --btn-secondary: #82b3d3;
+  --btn-select: #7db54f; */
   --btn-disabled: #e5e5e5;
   --btn-hover-primary: #615048;
-  --btn-hover-secondary: #68a2ca;
+  /* --btn-hover-secondary: #68a2ca;
   --btn-hover-select: #6c9e42; */
 
   /* --icon-primary: #000000;
   --icon-secondary: #83b3d3; */
   --icon-accent: #7db54f;
   /* --icon-hover: #756157;
-  --icon-active: rgba(117, 97, 87, 0.3);
-  --icon-secondary-hover: #68a2ca;
+  --icon-active: rgba(117, 97, 87, 0.3); */
+  /* --icon-secondary-hover: #68a2ca;
   --icon-secondary-active: rgba(104, 162, 202, 0.3); */
 
   /* --form-text: #3f5e72;
@@ -116,6 +116,10 @@ img {
   opacity: 0.8;
 }
 
+.site-logo-link:focus {
+  opacity: 0.8;
+}
+
 .site-logo-link:active {
   opacity: 0.5;
 }
@@ -132,6 +136,7 @@ img {
 
 .navigation-link {
   display: block;
+  position: relative;
   padding: 20px 16px;
   font-size: 20px;
   line-height: 24px;
@@ -141,25 +146,24 @@ img {
   text-align: center;
 }
 
-.navigation-link-current {
-  position: relative;
-}
-
-.navigation-link-current::after {
+.navigation-link[aria-current="page"]::after {
   position: absolute;
   content: "";
   border-bottom: 2px solid #756257;
-  width: 68px;
-  left: 50%;
+  left: 16px;
+  right: 16px;
   bottom: 0;
-  transform: translateX(-50%);
 }
 
-.navigation-link:hover {
+.navigation-link:not([aria-current="page"]):hover {
   color: var(--text-hover)
 }
 
-.navigation-link:active {
+.navigation-link:not([aria-current="page"]):focus {
+  color: var(--text-hover)
+}
+
+.navigation-link:not([aria-current="page"]):active {
   color: var(--text-active);
 }
 
@@ -216,8 +220,8 @@ img {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  background-color: #756157;
-  color: #ffffff;
+  background-color: var(--btn-primary);
+  color: var(--bg-primary);
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -226,23 +230,33 @@ img {
   border-radius: 4px;
 }
 
+.btn:hover {
+  background-color: var(--btn-hover-primary);
+}
+
+.btn:focus {
+  background-color: var(--btn-hover-primary);
+}
+
+.btn:active {
+  background-color: var(--btn-primary);
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .main {
-  background-color: #ffffff;
+  background-color: var(--bg-primary);
   flex-grow: 1;
 }
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 51px;
-  padding-bottom: 82px;
+  padding: 51px 371px 82px;
   background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
   background-color: #8c99a6;
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
   background-position: center bottom, center top;
   min-height: 485px;
+  text-align: center;
 }
 
 .advantages {
