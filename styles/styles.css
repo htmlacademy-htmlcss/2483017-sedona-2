@@ -217,6 +217,7 @@ img {
 .btn {
   display: inline-block;
   font-family: inherit;
+  min-width: 160px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -254,7 +255,7 @@ img {
   background-color: #8c99a6;
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
-  background-position: center bottom, center top;
+  background-position: center bottom, center;
   min-height: 485px;
   text-align: center;
 }
