@@ -74,18 +74,21 @@
               <legend class="filter-group-title">Инфраструктура:</legend>
               <ul class="filter-group-list">
                 <li class="filter-group-item">
-                  <label class="filter-label">
-                    <input class="filter-input" type="checkbox" name="pool" checked> Бассейн
+                  <label class="control">
+                    <input class="checkbox" type="checkbox" name="pool" checked>
+                    Бассейн
                   </label>
                 </li>
                 <li class="filter-group-item">
-                  <label class="filter-label">
-                    <input class="filter-input" type="checkbox" name="parking" checked> Парковка
+                  <label class="control">
+                    <input class="checkbox" type="checkbox" name="parking" checked>
+                    Парковка
                   </label>
                 </li>
                 <li class="filter-group-item">
-                  <label class="filter-label">
-                    <input class="filter-input" type="checkbox" name="wi-fi"> Wi-Fi
+                  <label class="control">
+                    <input class="checkbox" type="checkbox" name="wi-fi">
+                    Wi-Fi
                   </label>
                 </li>
               </ul>
@@ -95,18 +98,21 @@
               <legend class="filter-group-title">Тип Жилья:</legend>
               <ul class="filter-group-list">
                 <li class="filter-group-item">
-                  <label class="filter-label">
-                    <input class="filter-input" type="radio" name="hotel-group" value="hotel" checked> Гостиница
+                  <label class="control">
+                    <input class="radio" type="radio" name="hotel-group" value="hotel" checked>
+                    Гостиница
                   </label>
                 </li>
                 <li class="filter-group-item">
-                  <label class="filter-label">
-                    <input class="filter-input" type="radio" name="hotel-group" value="motel"> Мотель
+                  <label class="control">
+                    <input class="radio" type="radio" name="hotel-group" value="motel">
+                    Мотель
                   </label>
                 </li>
                 <li class="filter-group-item">
-                  <label class="filter-label">
-                    <input class="filter-input" type="radio" name="hotel-group" value="apartments"> Апартаменты
+                  <label class="control">
+                    <input class="radio" type="radio" name="hotel-group" value="apartments">
+                    Апартаменты
                   </label>
                 </li>
               </ul>
@@ -123,6 +129,18 @@
                   <input class="filter-price-input filter-price-input-max" placeholder="9000" type="number" id="price-max" name="price-max" value="9000" min="0">
                   <span class="filter-price-text">до</span>
                 </label>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar">
+                      <button type="button" class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену</span>
+                      </button>
+                      <button type="button" class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </fieldset>
 
