@@ -291,7 +291,7 @@ img {
 
 .advantages-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 400px);
   padding: 0;
   margin: 0;
 
@@ -323,6 +323,10 @@ img {
 
 .advantages-description {
   margin-bottom: 90px;
+}
+
+.advantages-image {
+  object-fit: cover;
 }
 
 .card-item-wrapper {
