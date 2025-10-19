@@ -326,7 +326,12 @@ img {
 }
 
 .advantages-image {
+  width: 800px;
+  height: 100%;
+  max-width: none;
+
   object-fit: cover;
+  object-position:center center;
 }
 
 .card-item-wrapper {
