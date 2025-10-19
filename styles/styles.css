@@ -330,6 +330,7 @@ img {
 }
 
 .card-item-wrapper {
+  height: 385px;
   padding: 112px 85px;
 }
 
@@ -342,7 +343,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 385px;
+  height: 385px;
   width: 400px;
 
   background-color: var(--color-bg-secondary);
