@@ -739,10 +739,12 @@ img {
 .filter-form {
   display: flex;
   flex-wrap: wrap;
-  gap: 70px;
+  column-gap: 70px;
+  row-gap: 16px;
 }
 
 .filter-group {
+  min-width: 150px;
   margin: 0;
   padding: 0;
 
@@ -794,6 +796,7 @@ img {
   display: block;
   width: 20px;
   height: 20px;
+  margin: 0;
 
   background-color: var(--color-light);
   border-radius: 4px;
@@ -815,6 +818,7 @@ img {
   display: block;
   width: 20px;
   height: 20px;
+  margin: 0;
 
   background-color: var(--color-light);
   border-radius: 100%;
@@ -842,7 +846,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 2px;
-  margin-bottom: 36px;
 }
 
 .filter-group-price {
