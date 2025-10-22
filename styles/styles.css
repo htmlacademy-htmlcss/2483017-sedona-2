@@ -46,6 +46,7 @@ html {
 
 body {
   height: 100%;
+  min-width: 1200px;
   margin: 0;
 
   font-family: "PT Sans", sans-serif;
@@ -1031,7 +1032,8 @@ img {
 }
 
 .catalog {
-  padding: 50px 70px 66px;
+  min-height: 1235px;
+  padding: 50px 70px 56px;
 }
 
 .catalog-wrapper {
@@ -1127,7 +1129,7 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 18px;
-  row-gap: 22px;
+  row-gap: 20px;
   max-width: 100%;
   margin: 0 0 40px;
   padding: 0 0 40px 0;
@@ -1151,7 +1153,7 @@ img {
   align-items: start;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto 1fr auto;
-  gap: 15px 20px;
+  gap: 16px 20px;
   padding: 20px;
 
   border: 1px solid var(--color-neutral);
