@@ -201,7 +201,6 @@ img {
   display: block;
   width: 20px;
   height: 20px;
-  margin-left: 9px;
 
   mask-image: var(--icon-navigation);
   mask-repeat: no-repeat;
@@ -222,7 +221,7 @@ img {
   min-width: 20px;
   height: 20px;
   margin-top: -21px;
-  margin-left: -13px;
+  margin-left: -11px;
 
   font-size: 10px;
   line-height: 10px;
@@ -1139,8 +1138,10 @@ img {
   column-gap: 18px;
   row-gap: 22px;
   max-width: 100%;
-  margin: 0 0 77px;
-  padding: 0;
+  margin: 0 0 40px;
+  padding: 0 0 40px 0;
+
+  border-bottom: 1px solid var(--color-neutral);
 
   list-style-type: none;
 }
@@ -1162,7 +1163,7 @@ img {
   gap: 15px 20px;
   padding: 20px;
 
-  border: 1px solid #dddddd;
+  border: 1px solid var(--color-neutral);
   border-radius: 4px;
 }
 
@@ -1250,7 +1251,7 @@ img {
   display: block;
   height: 17px;
 
-  background: url("../images/catalog/star.svg") center / contain space no-repeat;
+  background: url(../images/catalog/star.svg) center / contain space no-repeat;
 
   content: "";
 }
@@ -1268,11 +1269,11 @@ img {
 }
 
 .stars-4::before {
-  width: 87px;
+  width: 86px;
 }
 
 .stars-5::before {
-  width: 108px;
+  width: 102px;
 }
 
 .pagination {
