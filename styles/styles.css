@@ -34,14 +34,12 @@
 
 html {
   height: 100%;
-
-  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
@@ -60,7 +58,6 @@ body {
 }
 
 img {
-  display: block;
   max-width: 100%;
   height: auto;
 
@@ -103,6 +100,10 @@ img {
   display: flex;
   align-items: center;
   column-gap: 20px;
+}
+
+.site-logo {
+  display: block;
 }
 
 .site-logo-link {
@@ -172,6 +173,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  flex-wrap: wrap;
   max-width: 176px;
   margin: 0;
   padding: 0;
@@ -296,6 +298,10 @@ img {
   background-position: center bottom, center;
 }
 
+.hero-image {
+  display: block;
+}
+
 .advantages {
   padding-top: 69px;
 }
@@ -357,7 +363,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  height: 385px;
+  min-height: 385px;
   width: 400px;
 
   background-color: var(--color-bg-secondary);
@@ -607,6 +613,7 @@ img {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 300px;
   margin: 0;
   padding: 0;
 
@@ -673,7 +680,7 @@ img {
   display: block;
   padding: 8px 0;
 
-  --icon-logo: url("../images/icon_logo_developer.svg");
+  --icon-logo: url("../images/icon-logo-developer.svg");
 }
 
 .logo-developer-link::before {
@@ -945,6 +952,10 @@ img {
   background-color: var(--color-neutral);
 }
 
+.filter-price-input:disabled {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .range {
   flex-basis: 100%;
   margin-top: 43px;
@@ -1046,6 +1057,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  max-width: 200px;
   margin: 0;
   padding: 0;
 
@@ -1076,7 +1088,7 @@ img {
 }
 
 .catalog-select:disabled {
-  border-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-view-link {
@@ -1138,6 +1150,7 @@ img {
 
   list-style-type: none;
 }
+
 .catalog-title {
   margin: 7px 0 0;
 
@@ -1158,6 +1171,10 @@ img {
 
   border: 1px solid var(--color-neutral);
   border-radius: 4px;
+}
+
+.catalog-card-img {
+  display: block;
 }
 
 .catalog-card-img-link {
@@ -1244,7 +1261,7 @@ img {
   display: block;
   height: 17px;
 
-  background: url(../images/catalog/star.svg) center / contain space no-repeat;
+  background: url("../images/catalog/star.svg") center / contain space no-repeat;
 
   content: "";
 }
@@ -1271,6 +1288,7 @@ img {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   padding: 0;
   margin: 0;
@@ -1281,8 +1299,8 @@ img {
 
 .pagination-link {
   display: block;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
 
   font-size: 20px;
   line-height: 60px;
@@ -1305,8 +1323,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
 
   color: var(--color-text-primary);
 
@@ -1361,7 +1379,7 @@ img {
   width: 52px;
   height: 52px;
 
-  background: var(--color-bg-primary) url("../images/icon_close_modal.svg") center / 21px 21px no-repeat;
+  background: var(--color-bg-primary) url("../images/icon-close-modal.svg") center / 21px 21px no-repeat;
   border: none;
   border-radius: 50%;
 
@@ -1440,12 +1458,22 @@ img {
 }
 
 .hotel-search-input[type="text"] {
-  background: var(--color-bg-primary) url("../images/icon_calendar.svg") right 21px center / auto no-repeat;
+  background: var(--color-bg-primary) url("../images/icon-calendar.svg") right 21px center / auto no-repeat;
 }
 
 .hotel-search-input:focus {
   position: relative;
   z-index: 2;
+
+  background-color: var(--color-neutral);
+}
+
+.hotel-search-input:hover {
+  background-color: var(--color-neutral);
+}
+
+.hotel-search-input:disabled {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .modal-message {
@@ -1581,7 +1609,7 @@ img {
 
   color: var(--color-light);
 
-  background: var(--color-secondary) url("../images/icon_tooltip.svg") center / auto no-repeat;
+  background: var(--color-secondary) url("../images/icon-tooltip.svg") center / auto no-repeat;
   border: none;
   border-radius: 100%;
 
@@ -1667,13 +1695,16 @@ img {
   display: none;
 }
 
-input[type="number"] {
-  appearance: textfield;
+.hotel-search-input-number,
+.filter-price-input {
+  appearance: none;
   -moz-appearance: textfield;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+.filter-price-input::-webkit-outer-spin-button,
+.filter-price-input::-webkit-inner-spin-button,
+.hotel-search-input-number::-webkit-outer-spin-button,
+.hotel-search-input-number::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
