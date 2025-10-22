@@ -347,6 +347,7 @@ img {
 }
 
 .card-item-wrapper {
+  height: 100%;
   padding: 101px 85px;
 }
 
@@ -908,16 +909,6 @@ img {
 
   background-color: var(--color-bg-primary);
   border: none;
-
-  appearance: none;
-  -moz-appearance: textfield;
-  -webkit-appearance: none;
-}
-
-.filter-price-input::-webkit-outer-spin-button,
-.filter-price-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 .filter-price-input-min {
@@ -1447,7 +1438,7 @@ img {
 }
 
 .hotel-search-input[type="text"] {
-  background: url("../images/icon_calendar.svg") right 21px center / auto no-repeat;
+  background: var(--color-bg-primary) url("../images/icon_calendar.svg") right 21px center / auto no-repeat;
 }
 
 .hotel-search-input:focus {
@@ -1504,7 +1495,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
+  width: 48px;
   height: 48px;
   margin-left: 10px;
 
@@ -1543,16 +1534,6 @@ img {
 
 .hotel-search-input-number {
   padding: 14px 10px;
-
-  appearance: none;
-  -moz-appearance: textfield;
-  -webkit-appearance: none;
-}
-
-.hotel-search-input-number::-webkit-outer-spin-button,
-.hotel-search-input-number::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 .counter-btn-plus {
@@ -1665,7 +1646,7 @@ img {
 
 .modal-button {
   grid-column: 1 / -1;
-  margin-top: 30px;
+  margin-top: 25px;
   padding-top: 18px;
   padding-bottom: 18px;
 
@@ -1682,4 +1663,15 @@ img {
 
 .modal-container-close {
   display: none;
+}
+
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
