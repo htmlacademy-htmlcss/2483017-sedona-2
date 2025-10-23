@@ -1,12 +1,214 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon/favicon.png">
+</head>
 
-  </body>
+<body>
+  <div class="container">
+    <header class="header" data-test="header">
+      <nav class="navigation">
+        <a class="site-logo-link" href="index.html">
+          <img class="site-logo" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона">
+        </a>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html" aria-current="page">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+
+        <ul class="navigation-user">
+          <li class="navigation-user-item">
+            <a class="navigation-user-link navigation-link-search" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-user-item">
+            <a class="navigation-user-link navigation-link-favorites" href="#">
+              <span class="visually-hidden">Отелей в избранном:</span>
+              <span class="favorites-count">12</span>
+            </a>
+          </li>
+        </ul>
+
+        <a class="btn btn-primary" href="#">Хочу сюда!</a>
+      </nav>
+    </header>
+
+    <main class="main" data-test="main">
+      <section class="hero" data-test="hero">
+        <h1 class="visually-hidden">Сайт города Седона</h1>
+        <img class="hero-image" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
+      </section>
+
+      <section class="advantages" data-test="advantages">
+        <div class="content-wrapper">
+          <h2 class="section-title advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="section-description advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
+        <ul class="advantages-list">
+          <li class="card-item card-item-highlight">
+            <div class="card-item-wrapper">
+              <h3 class="card-item-title">Настоящий городок</h3>
+              <p class="card-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <img class="advantages-image" src="images/photo-1.jpg" width="800" height="385" alt="Город Седона у подножия красных скал в Аризоне">
+          </li>
+          <li class="card-item">
+            <h3 class="card-item-title">Небольшая площадь</h3>
+            <p class="card-item-description">Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="card-item">
+            <h3 class="card-item-title">Красивая<br>дорога</h3>
+            <p class="card-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="card-item">
+            <h3 class="card-item-title">Мало<br>туристов</h3>
+            <p class="card-item-description">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+          <li class="card-item card-item-highlight card-item-reversed">
+            <div class="card-item-wrapper">
+              <h3 class="card-item-title">Там есть<br>мост дьявола</h3>
+              <p class="card-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
+            <img class="advantages-image" src="images/photo-2.jpg" width="800" height="385" alt="Природный каменный мост Дьявола в Седоне">
+          </li>
+        </ul>
+      </section>
+
+      <section class="services" data-test="service">
+        <div class="content-wrapper">
+          <h2 class="section-title">Приезжайте в Седону отдохнуть<br>в комфорте и уюте!</h2>
+          <p class="section-description services-description">Опытный персонал и качественное обслуживание!</p>
+        </div>
+        <ul class="services-list">
+          <li class="card-item services-card-item-home">
+            <h3 class="card-item-title">Жильё</h3>
+            <p class="card-item-description">Рекомендуем пожить<br>в настоящем мотеле,<br> всё как в кино!</p>
+          </li>
+          <li class="card-item services-card-item-food">
+            <h3 class="card-item-title">Еда</h3>
+            <p class="card-item-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
+          </li>
+          <li class="card-item services-card-item-gifts">
+            <h3 class="card-item-title">Сувениры</h3>
+            <p class="card-item-description">Не только китайского,<br> но и настоящего местного производства!</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="search" data-test="search">
+        <div class="content-wrapper">
+          <h2 class="section-title">Заинтересовались?</h2>
+          <p class="section-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        </div>
+        <button class="btn btn-primary btn-search" type="button">Поиск гостиницы в Седоне</button>
+      </section>
+
+      <section class="subscribe subscribe-index" data-test="subscribe">
+        <div class="content-wrapper">
+          <h2 class="section-title section-title-highlight">Подпишитесь на рассылку</h2>
+          <p class="section-description section-description-highlight">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+        </div>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="subscribe-email">Введите ваш e-mail</label>
+          <input class="subscribe-input" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
+          <button class="btn btn-secondary btn-subscribe" type="submit">Подписаться</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer" data-test="footer">
+      <div class="footer-wrapper">
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-link social-link-vk" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link social-link-telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+        <address class="phone-wrapper">
+          <a class="phone" href="tel:+78128121212">+7&nbsp;(812)&nbsp;812&#8209;12&#8209;12</a>
+        </address>
+
+        <a class="logo-developer-link" href="https://htmlacademy.ru/intensive/htmlcss">
+          <span class="visually-hidden">Логотип разработчика</span>
+        </a>
+      </div>
+    </footer>
+  </div>
+
+
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-hotel-search">
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="hotel-search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="hotel-search">
+            <label class="hotel-search-label" for="checkin">Дата Заездa:</label>
+            <input class="hotel-search-input" id="checkin" type="text" name="checkin" placeholder="Укажите дату" value="27 апреля 2020" required>
+            <span class="modal-message modal-message-error">Мы не можем отправить вас в прошлое.</span>
+          </div>
+
+          <div class="hotel-search">
+            <label class="hotel-search-label" for="checkout">Дата Выезда:</label>
+            <input class="hotel-search-input" id="checkout" type="text" name="checkout" placeholder="Укажите дату" value="1 сентября 2023" required>
+            <span class="modal-message">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+
+          <div class="hotel-search-group hotel-search-adults">
+            <label class="hotel-search-label" for="adults">Взрослые:</label>
+            <div class="counter">
+              <button class="counter-btn counter-btn-minus" type="button" aria-label="Уменьшить."></button>
+              <input class="hotel-search-input hotel-search-input-number" id="adults" type="number" name="adults" min="1" step="1" value="2" required>
+              <button class="counter-btn counter-btn-plus" type="button" aria-label="Увеличить."></button>
+            </div>
+          </div>
+          <div class="hotel-search-group hotel-search-kids">
+            <span class="hotel-search-group-overflow">
+              <label class="hotel-search-label hotel-search-label-kids" for="kids">Дети:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button">
+                  <span class="visually-hidden">Подсказка</span>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+            </span>
+            <div class="counter">
+              <button class="counter-btn counter-btn-minus" type="button" aria-label="Уменьшить."></button>
+              <input class="hotel-search-input hotel-search-input-number" id="kids" type="number" name="kids" min="0" step="1" value="2" required>
+              <button class="counter-btn counter-btn-plus" type="button" aria-label="Увеличить."></button>
+            </div>
+          </div>
+          <button class="btn btn-secondary modal-button" type="submit">Найти</button>
+        </form>
+      </section>
+      <button type="button" class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </div>
+  </div>
+</body>
+
 </html>
