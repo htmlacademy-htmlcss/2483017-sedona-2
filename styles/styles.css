@@ -843,7 +843,11 @@ img {
   opacity: 0.6;
 }
 
-.control:active {
+.control:active,
+.checkbox:disabled,
+.checkbox:disabled + .control-label,
+.radio:disabled,
+.radio:disabled + .control-label {
   opacity: 0.3;
 }
 
@@ -986,6 +990,7 @@ img {
 
   background-color: var(--color-light);
   border-radius: 5px;
+  border: none;
 
   cursor: pointer;
 }
@@ -1245,15 +1250,8 @@ img {
   color: var(--color-overlay-active);
 }
 
-.catalog-card-rating {
-  display: grid;
-  grid-column: 1 / -1;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 20px;
-}
-
 .stars {
+  align-self: center;
   margin: 0;
 }
 
@@ -1279,7 +1277,7 @@ img {
 }
 
 .stars-4::before {
-  width: 86px;
+  width: 87px;
 }
 
 .stars-5::before {
@@ -1525,9 +1523,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
+  width: 40px;
   height: 48px;
-  margin-left: 10px;
+  padding: 0;
 
   border: none;
   opacity: 0.3;
