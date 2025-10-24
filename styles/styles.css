@@ -267,6 +267,7 @@ img {
 }
 
 .btn-navigation {
+  align-self: center;
   max-width: 180px;
 }
 
