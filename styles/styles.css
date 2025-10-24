@@ -128,7 +128,7 @@ img {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 716px;
+  max-width: 520px;
   margin: 0;
   padding: 0;
 
@@ -264,6 +264,10 @@ img {
   border-radius: 4px;
 
   cursor: pointer;
+}
+
+.btn-navigation {
+  max-width: 180px;
 }
 
 .btn-primary:hover,
@@ -492,6 +496,7 @@ img {
 }
 
 .btn.btn-search {
+  max-width: 720px;
   padding: 8px 50px;
 
   font-size: 20px;
@@ -591,6 +596,7 @@ img {
 }
 
 .phone {
+  max-width: 700px;
   padding: 5px 0;
 
   font-size: 40px;
@@ -803,7 +809,7 @@ img {
 }
 
 .filter-group {
-  min-width: 150px;
+  width: 150px;
   margin: 0;
   padding: 0;
 
@@ -906,6 +912,7 @@ img {
 .filter-group-price {
   align-self: start;
   margin-left: auto;
+  width: 288px;
 }
 
 .filter-price-input {
